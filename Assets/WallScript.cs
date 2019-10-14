@@ -5,7 +5,7 @@ using UnityEngine;
 public class WallScript : MonoBehaviour
 {
     public ParticleSystem WallBreakParticle;
-    // Start is called before the first frame update
+    
     void Start()
     {
         
@@ -24,6 +24,7 @@ public class WallScript : MonoBehaviour
             Debug.Log("Hit Wall");
             //Destroy(other.gameObject);
             WallBreakParticle.Play();
+
 
         }
     }
